@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Bad+Script|Caveat|Comfortaa|Encode+Sans+Condensed|Shadows+Into+Light" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+.content {
+    position: absolute;
+    color: #f1f1f1;
+    width: 100%;
+    padding: 12px 32px;
+    margin-top:2px;
+}
+
+  .fas{
+    font-size:20px;
+    margin-left:10px;
+    margin-top:8px;
+    color:#405f73;
+    width: 3.4rem;
+    height: 3.4rem;
+    left: 0;
+  }
+.container {
+    margin-top:5%;
+    width: 500px;
+    height: 200px;
+}
+body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+}
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+.col-75 {
+    float: right;
+    width: 75%;
+    margin-top: 6px;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 200px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+h1{
+  text-align: center;
+  font-size:10rem;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  letter-spacing: 8px;
+  font-weight: 200;
+
+}
+.slide1{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    -webkit-animation: moveInLeft 2s;
+    animation: moveInLeft 2s;
+}
+
+.slide2{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    -webkit-animation: moveInRight 2s;
+    animation: moveInRight 2s;
+}
+
+
+@keyframes moveInRight{
+        0%{
+            opacity: 0;
+            transform: translateX(100px);
+        }
+      50%{
+        opacity: 0.3;
+            transform: translateX(-5px);
+      }
+        80%{
+            opacity: 0.4;
+            transform: translateX(-1px);
+        }
+        100%{
+            opacity: 1;
+            transform: translate(0);
+        }
+    }
+
+@keyframes moveInLeft{
+        0%{
+            opacity: 0;
+            transform: translateX(-100px);
+        }
+      50%{
+        opacity: 0.3;
+            transform: translateX(5px);
+      }
+        80%{
+            opacity: 0.4;
+            transform: translateX(10px);
+        }
+        100%{
+            opacity: 1;
+            transform: translate(0);
+        }
+    }
+/* This is for the button  */
+    .button{
+      font-size: 20px;
+        width:40%;
+        background: #fc4a1a;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #f7b733, #fc4a1a);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #f7b733, #fc4a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        height:20%;
+        border: none;
+        color: white;
+        padding:12px;
+        text-decoration: none;
+        margin:1px;
+        cursor: pointer;
+        left:35%;
+        top:100%;
+        position: absolute;
+        border-radius:5px;
+        color: black;
+        -webkit-animation: movefrombottom 2s;
+        animation: movefrombottom 2s;
+    }
+
+    @keyframes movefrombottom{
+            0%{
+                opacity: 0;
+                transform: translateY(100px);
+            }
+          50%{
+            opacity: 0.3;
+                transform: translateY(-5px);
+          }
+            80%{
+                opacity: 0.4;
+                transform: translateY(2px);
+            }
+            100%{
+                opacity: 1;
+                transform: translate(0);
+            }
+        }
+
+#dark{
+  font-size:20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+a:link, a:visited {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.allaboutUs{
+    display: inline-block;
+    padding: 16px 32px;
+    margin:2px;
+}
+
+
+
+</style>
+
+
+<body>
+<!-- This is the video section -->
+ <video autoplay muted loop id="myVideo">
+  <source src="https://static.videezy.com/system/resources/previews/000/032/917/original/selectionjean1.mp4" type="video/mp4">
+</video>
+<!-- This is the Master Product heading section -->
+ <div class="content">
+ <div class="container">
+<div class="slide1">
+<h1>MASTER</h1>
+</div>
+<div class="slide2">
+<h1>PRODUCT</h1>
+</div>
+</div>
+<!-- This is the section for button -->
+<a href="file:///C:/Users/Saurabh%20kumar/Desktop/Master/Project001/second.html#!">
+<button class="button" id="dark">Shop Now</button></a>
+<!-- </div> -->
+
+<div class="container-fluid">
+   <div class="row"> 
+<div class="col-lg-4">
+    <h1 style="font-family: 'Montserrat', sans-serif; font-size:20px;">ABOUT US</h1>
+    <p style="font-family: 'Montserrat', sans-serif; letter-spacing:2px;">Master product is all about Men's fashion that are not only unique but also provide a sense of comfort.</p>
+</div>
+<div class="col-lg-4">
+    <h1 style="font-family: 'Montserrat', sans-serif; font-size:20px;">BLOG</h1>
+    <p style="font-family: 'Montserrat', sans-serif; letter-spacing:2px;">Master product is all about Men's fashion that are not only unique but also provide a sense of comfort.</p>
+</div>
+<div class="col-lg-4">
+        <h1 style="font-family: 'Montserrat', sans-serif; font-size:20px;">CONTACT US</h1>
+        <p style="font-family: 'Montserrat', sans-serif; letter-spacing:2px;">Master product is all about Men's fashion that are not only unique but also provide a sense of comfort.</p>
+    </div>
+</div>
+</div>
+</body>
+</html>
